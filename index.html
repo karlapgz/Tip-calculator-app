@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+
+<body>
+  <section class="tip-calculator">
+
+    <div class="calculator-body">
+      <!-- section bill and tips -->
+      <section class="bill-tips">
+
+        <!-- Bill section -->
+        <div class="bill">
+          <h3>Bill</h3>
+          <div class="section-input">
+            <img src="images/icon-dollar.svg" alt="">
+            <input type="number" id="bill-id" placeholder="0">
+          </div>
+        </div>
+
+        <!-- Select tip -->
+        <div class="tip">
+          <h3>Select Tip %</h3>
+          <div class="buttons-tip">
+            <button class="btn-tip 5">5%</button>
+            <button class="btn-tip 10">10%</button>
+            <button class="btn-tip 15">15%</button>
+            <button class="btn-tip 25">25%</button>
+            <button class="btn-tip 50">50%</button>
+            <input type="number" class="btn-tip btn-custom" id="btn-custom" placeholder="Custom">
+          </div>
+        </div>
+
+        <!-- Number of people -->
+        <div class="number-people">
+          <h3>Number of people</h3>
+          <div class="section-input">
+            <img src="images/icon-person.svg" alt="">
+            <input type="number" id="num-people" placeholder="0">
+          </div>
+        </div>
+      </section>
+
+      <!-- Section tip/person and total/person -->
+      <section class="tip-total-person">
+
+        <div class="tip-person flex">
+          <div class="text">
+            <h3>Tip Amount</h3>
+            <span>/ person</span>
+          </div>
+
+          <span class="total-tip">$0.00</span>
+        </div>
+
+        <div class="total-person flex">
+          <div class="text">
+            <h3>Total</h3>
+            <span>/ person</span>
+          </div>
+
+          <span class="total">$0.00</span>
+        </div>
+
+        <button class="reset">Reset</button>
+      </section>
+    </div>
+
+  </section>
+
+  <!-- Javascript -->
+  <script src="main.js"></script>
+</body>
+
+</html>

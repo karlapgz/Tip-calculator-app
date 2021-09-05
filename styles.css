@@ -1,0 +1,167 @@
+/*** variables ***/
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    /* Primary */
+    --Strong-cyan: hsl(172, 67%, 45%);
+
+    /* Neutral */
+    --very-dark-cyan: hsl(183, 100%, 15%);
+    --dark-grayish-cyan: hsl(186, 14%, 43%);
+    --dark-grayish: hsl(184, 14%, 56%);
+    --light-grayish-cyan: hsl(185, 41%, 84%);
+    --light-grayish: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: var(--light-grayish-cyan);
+    font-family: 'Space Mono', monospace;
+}
+
+h3 {
+    font-size: 1rem;
+    color: var(--dark-grayish-cyan);
+}
+
+/*** tip calculator ***/
+
+.tip-calculator {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator-body {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--White);
+    width: 60%;
+    height: 28rem;
+    padding: 3rem 2rem;
+    border-radius: 15px;
+}
+
+/*** section bill-tips***/
+
+input {
+    border: transparent;
+    background-color: var(--light-grayish);
+    width: 77%;
+    font-family: 'Space Mono', monospace;
+    text-align: right;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--very-dark-cyan);
+    border-radius: 0 5px 5px 0;
+}
+
+img {
+    background-color: var(--light-grayish);
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.bill-tips {
+    width: 50%;
+}
+
+.section-input {
+    display: flex;
+    align-items: center;
+}
+
+.bill {
+    margin-bottom: 3rem;
+}
+
+/*** Section tips ***/
+.buttons-tip {
+    margin-bottom: 3rem;
+}
+
+.btn-tip {
+    border:transparent;
+    background-color: var(--very-dark-cyan);
+    width: 100px;
+    height: 2.5rem;
+    color: var(--White);
+    font-family: 'Space Mono', monospace;
+    font-size: 1.3rem;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.btn-custom {
+    width: 100px;
+    height: 2.5rem;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.btn-bg {
+    background-color: var(--Strong-cyan);
+}
+
+/*** Section people ***/
+
+
+/*** Tip persona and total person***/
+
+.tip-total-person {
+    background-color: var(--very-dark-cyan);
+    width: 50%;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+.text h3 {
+    color: var(--White);
+    font-size: 0.9rem;
+}
+
+.text span {
+    color: var(--dark-grayish);
+    font-size: 1rem;
+    font-size: 0.9rem;
+}
+
+span {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--Strong-cyan);
+}
+
+.reset {
+    background-color: var(--Strong-cyan);
+    width: 100%;
+    padding: 0.7rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--very-dark-cyan);
+    font-weight: bold;
+    font-size: 1rem;
+    border: transparent;
+    border-radius: 2px;
+    margin-top: 3rem;
+}
